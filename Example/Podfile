@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'TPPhoto-Swift_Example' do
+  pod 'TPPhoto-Swift', :path => '../'
+
+  target 'TPPhoto-Swift_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
