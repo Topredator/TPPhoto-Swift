@@ -1,0 +1,16 @@
+PODS:
+  - TPPhoto-Swift (0.1.0)
+
+DEPENDENCIES:
+  - TPPhoto-Swift (from `../`)
+
+EXTERNAL SOURCES:
+  TPPhoto-Swift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TPPhoto-Swift: 99d65b5f6ee5fc1d1aa8b8e0f57cabebfc65866d
+
+PODFILE CHECKSUM: 18d6917d1acf17c51e7f76ea97e1ce0ea2378d79
+
+COCOAPODS: 1.10.1

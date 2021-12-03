@@ -1,0 +1,6 @@
+framework module Pods_TPPhoto_Swift_Tests {
+  umbrella header "Pods-TPPhoto-Swift_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

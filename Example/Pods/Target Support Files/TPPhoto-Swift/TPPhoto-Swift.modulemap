@@ -1,0 +1,6 @@
+framework module TPPhoto_Swift {
+  umbrella header "TPPhoto-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
