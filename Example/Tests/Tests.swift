@@ -1,5 +1,4 @@
 import XCTest
-import TPPhoto-Swift
 
 class Tests: XCTestCase {
     

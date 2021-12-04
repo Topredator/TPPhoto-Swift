@@ -21,17 +21,33 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/周晓路/TPPhoto-Swift'
+  s.homepage         = 'https://github.com/Topredator/TPPhoto-Swift'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '周晓路' => 'luyanggold@163.com' }
-  s.source           = { :git => 'https://github.com/周晓路/TPPhoto-Swift.git', :tag => s.version.to_s }
+  s.author           = { 'Topredator' => 'luyanggold@163.com' }
+  s.source           = { :git => 'https://github.com/Topredator/TPPhoto-Swift.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'TPPhoto-Swift/Classes/**/*'
+#  s.source_files = 'TPPhoto-Swift/Classes/**/*'
   
+  # 图片资源
+  s.resource_bundles = {
+      'TPPhotoSwift'  => ['TPPhoto-Swift/Assets/*xcassets']
+  }
+  
+  s.subspec 'Base' do |ss|
+      ss.source_files = 'TPPhoto-Swift/Classes/Base/**/*'
+  end
+  
+  s.subspec 'Previewer' do |ss|
+      ss.source_files = 'TPPhoto-Swift/Classes/Previewer/**/*'
+      ss.dependency 'TPUIKit-Swift'
+      ss.dependency 'SnapKit'
+      ss.dependency 'TPPhoto-Swift/Base'
+      ss.dependency 'SDWebImage'
+  end
   # s.resource_bundles = {
   #   'TPPhoto-Swift' => ['TPPhoto-Swift/Assets/*.png']
   # }

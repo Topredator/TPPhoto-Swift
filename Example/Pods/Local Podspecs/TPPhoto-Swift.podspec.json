@@ -1,22 +1,50 @@
 {
   "name": "TPPhoto-Swift",
-  "version": "0.1.0",
-  "summary": "A short description of TPPhoto-Swift.",
+  "version": "0.0.1",
+  "summary": "Picture picker and Image browser.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/周晓路/TPPhoto-Swift",
+  "homepage": "https://github.com/Topredator/TPPhoto-Swift",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "周晓路": "luyanggold@163.com"
+    "Topredator": "luyanggold@163.com"
   },
   "source": {
-    "git": "https://github.com/周晓路/TPPhoto-Swift.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/Topredator/TPPhoto-Swift.git",
+    "tag": "0.0.1"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "TPPhoto-Swift/Classes/**/*"
+  "resource_bundles": {
+    "TPPhotoSwift": [
+      "TPPhoto-Swift/Assets/*xcassets"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Base",
+      "source_files": "TPPhoto-Swift/Classes/Base/**/*"
+    },
+    {
+      "name": "Previewer",
+      "source_files": "TPPhoto-Swift/Classes/Previewer/**/*",
+      "dependencies": {
+        "TPUIKit-Swift": [
+
+        ],
+        "SnapKit": [
+
+        ],
+        "TPPhoto-Swift/Base": [
+
+        ],
+        "SDWebImage": [
+
+        ]
+      }
+    }
+  ]
 }
