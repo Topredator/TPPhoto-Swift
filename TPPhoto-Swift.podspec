@@ -41,6 +41,14 @@ TODO: Add long description of the pod here.
       ss.source_files = 'TPPhoto-Swift/Classes/Base/**/*'
   end
   
+  s.subspec 'Picker' do |ss|
+      ss.source_files = 'TPPhoto-Swift/Classes/Picker/**/*'
+      ss.dependency 'TPPhoto-Swift/Base'
+      ss.dependency 'SnapKit'
+      ss.dependency 'SVProgressHUD'
+      ss.frameworks = 'Photos'
+  end
+  
   s.subspec 'Previewer' do |ss|
       ss.source_files = 'TPPhoto-Swift/Classes/Previewer/**/*'
       ss.dependency 'TPUIKit-Swift'

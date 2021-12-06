@@ -27,7 +27,7 @@ public typealias TPPhotoDownloadCompleteClosure = (UIImage?, [AnyHashable: Any]?
     public var imageWidth: CGFloat {
         CGFloat(asset.pixelWidth)
     }
-    public var localIentifier: String {
+    public var localIdentifier: String {
         asset.localIdentifier
     }
     public func originalImage(_ progress: TPPhotoDownloadProgressClosure? = nil,

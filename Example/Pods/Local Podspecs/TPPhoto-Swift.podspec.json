@@ -29,6 +29,22 @@
       "source_files": "TPPhoto-Swift/Classes/Base/**/*"
     },
     {
+      "name": "Picker",
+      "source_files": "TPPhoto-Swift/Classes/Picker/**/*",
+      "dependencies": {
+        "TPPhoto-Swift/Base": [
+
+        ],
+        "SnapKit": [
+
+        ],
+        "SVProgressHUD": [
+
+        ]
+      },
+      "frameworks": "Photos"
+    },
+    {
       "name": "Previewer",
       "source_files": "TPPhoto-Swift/Classes/Previewer/**/*",
       "dependencies": {
