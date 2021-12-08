@@ -24,6 +24,41 @@ pod 'TPPhoto-Swift'
 
 周晓路, luyanggold@163.com
 
-## License
+## Used
 
-TPPhoto-Swift is available under the MIT license. See the LICENSE file for more info.
+```swift
+// 1、打开相册，选中多图
+let vc = TPPhotoPickerVC(maxCount: 9)
+vc.delegate = self
+let navi = UINavigationController(rootViewController: vc)
+present(navi, animated: true, completion: nil)
+
+// 代理的回调函数是选中的图片
+extension ViewController: TPPhotoPickerVCDelegate {
+  func didFinish(_ vc: TPPhotoPickerVC, _ images: [UIImage]) {
+        print("\(images)")
+    }
+}
+
+
+/* 2、浏览网络图片，初始化使用传入url列表形式,
+	atIndex参数 所标识展示的下标
+*/
+ let vc = TPPhotoPreviewerVC(showPhotos: [
+   "url1地址",
+   "url2地址",
+   "url3地址"
+ ], atIndex: 0)
+present(vc, animated: true, completion: nil)
+
+/*
+	3、展示本地图片数组,初始化传入的参数为 图片数组 [Image],
+atIndex参数 表示所展示图片的下标
+*/
+let vc = TPPhotoPreviewerVC(showImgs: [
+  UIImage(named: "1xx"),
+	UIImage(named: "2xx"),
+  UIImage(named: "3xx")
+])
+present(vc, animated: true, completion: nil)
+```

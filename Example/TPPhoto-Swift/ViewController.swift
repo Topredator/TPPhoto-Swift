@@ -23,19 +23,32 @@ class ViewController: UIViewController {
 //        [btn setTitleColor:UIColor.redColor forState:UIControlStateNormal];
 //        [self.view addSubview:btn];
         
-        let btn2 = UIButton(frame: CGRect(x: 100, y: 300, width: 100, height: 100))
+        let btn1 = UIButton(frame: CGRect(x: 100, y: 100, width: 200, height: 100))
+        btn1.setTitle("打开相册", for: .normal)
+        btn1.setTitleColor(.red, for: .normal)
+        btn1.addTarget(self, action: #selector(openAlbum), for: .touchUpInside)
+        view.addSubview(btn1)
+        
+        
+        let btn2 = UIButton(frame: CGRect(x: 100, y: 300, width: 200, height: 100))
         btn2.setTitle("图片浏览", for: .normal)
         btn2.setTitleColor(.red, for: .normal)
         btn2.addTarget(self, action: #selector(showPreView), for: .touchUpInside)
         view.addSubview(btn2)
         
-        let btn3 = UIButton(frame: CGRect(x: 100, y: 500, width: 100, height: 100))
+        let btn3 = UIButton(frame: CGRect(x: 100, y: 500, width: 200, height: 100))
         btn3.setTitle("UIImage查看", for: .normal)
         btn3.setTitleColor(.red, for: .normal)
         btn3.addTarget(self, action: #selector(showPreViewUIImage), for: .touchUpInside)
         view.addSubview(btn3)
     }
     
+    @objc func openAlbum() {
+        let vc = TPPhotoPickerVC(maxCount: 9)
+        vc.delegate = self
+        let navi = UINavigationController(rootViewController: vc)
+        present(navi, animated: true, completion: nil)
+    }
     
     @objc func showPreView() {
         let vc = TPPhotoPreviewerVC(showPhotos: [
@@ -44,12 +57,19 @@ class ViewController: UIViewController {
         ], atIndex: 1)
         present(vc, animated: true, completion: nil)
     }
+    
     @objc func showPreViewUIImage() {
         let vc = TPPhotoPreviewerVC(showImgs: [
             UIImage(named: "1")!,
             UIImage(named: "2")!
         ], atIndex: 1)
         present(vc, animated: true, completion: nil)
+    }
+}
+
+extension ViewController: TPPhotoPickerVCDelegate {
+    func didFinish(_ vc: TPPhotoPickerVC, _ images: [UIImage]) {
+        print("\(images)")
     }
 }
 
