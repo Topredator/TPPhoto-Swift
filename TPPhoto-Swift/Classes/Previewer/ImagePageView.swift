@@ -64,7 +64,7 @@ import SDWebImage
         scrollView.minimumZoomScale = 1
         scrollView.showsVerticalScrollIndicator = false
         scrollView.showsHorizontalScrollIndicator = false
-        scrollView.decelerationRate = UIScrollViewDecelerationRateFast
+        scrollView.decelerationRate = UIScrollView.DecelerationRate.fast
         scrollView.delegate = self
         return scrollView
     }()

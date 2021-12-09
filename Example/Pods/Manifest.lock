@@ -1,22 +1,22 @@
 PODS:
   - MBProgressHUD (1.2.0)
-  - MJRefresh (3.7.2)
+  - MJRefresh (3.7.5)
   - SDWebImage (5.12.1):
     - SDWebImage/Core (= 5.12.1)
   - SDWebImage/Core (5.12.1)
   - SnapKit (4.2.0)
   - SVProgressHUD (2.2.5)
   - TPFoundation-Swift (1.0.0)
-  - TPPhoto-Swift (0.0.1):
-    - TPPhoto-Swift/Base (= 0.0.1)
-    - TPPhoto-Swift/Picker (= 0.0.1)
-    - TPPhoto-Swift/Previewer (= 0.0.1)
-  - TPPhoto-Swift/Base (0.0.1)
-  - TPPhoto-Swift/Picker (0.0.1):
+  - TPPhoto-Swift (1.0.0):
+    - TPPhoto-Swift/Base (= 1.0.0)
+    - TPPhoto-Swift/Picker (= 1.0.0)
+    - TPPhoto-Swift/Previewer (= 1.0.0)
+  - TPPhoto-Swift/Base (1.0.0)
+  - TPPhoto-Swift/Picker (1.0.0):
     - SnapKit
     - SVProgressHUD
     - TPPhoto-Swift/Base
-  - TPPhoto-Swift/Previewer (0.0.1):
+  - TPPhoto-Swift/Previewer (1.0.0):
     - SDWebImage
     - SnapKit
     - TPPhoto-Swift/Base
@@ -100,12 +100,12 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  MJRefresh: 30997d30b347c8e9508a4db11e3a690da0c9b85a
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
   SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   TPFoundation-Swift: b1be14c16eff9220f9066b410fdbdec5c1a4a6a1
-  TPPhoto-Swift: 543293e27327601d2dac07c812b727cfb9e3f0f3
+  TPPhoto-Swift: e2f9e24fabdb91d6f93e5e6babe404b3a71c66cd
   TPUIKit-Swift: 4b2e4827331afc1d279c7c0bd2c49f0e6de2abd5
 
 PODFILE CHECKSUM: 18d6917d1acf17c51e7f76ea97e1ce0ea2378d79

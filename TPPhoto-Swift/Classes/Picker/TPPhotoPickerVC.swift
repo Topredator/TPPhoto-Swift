@@ -321,13 +321,13 @@ extension TPPhotoPickerVC: UIImagePickerControllerDelegate, UINavigationControll
     }
     
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        if let image = info[UIImagePickerController.InfoKey.init(string: UIImagePickerControllerOriginalImage)] as? UIImage {
-            // 获取图片
-            delegate?.didFinish(self, [image])
+        guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else {
+            picker.dismiss(animated: true, completion: nil)
+            close()
+            return
         }
+        delegate?.didFinish(self, [image])
         picker.dismiss(animated: true, completion: nil)
         close()
     }
-    
-
 }
