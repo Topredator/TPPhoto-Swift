@@ -41,6 +41,9 @@
         ],
         "SVProgressHUD": [
 
+        ],
+        "TPFoundation-Swift": [
+
         ]
       },
       "frameworks": "Photos"

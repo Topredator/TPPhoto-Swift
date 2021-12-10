@@ -47,6 +47,7 @@ TODO: Add long description of the pod here.
       ss.dependency 'SnapKit'
       ss.dependency 'SVProgressHUD'
       ss.frameworks = 'Photos'
+      ss.dependency 'TPFoundation-Swift'
   end
   
   s.subspec 'Previewer' do |ss|

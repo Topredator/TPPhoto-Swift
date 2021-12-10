@@ -15,67 +15,72 @@ PODS:
   - TPPhoto-Swift/Picker (1.0.0):
     - SnapKit
     - SVProgressHUD
+    - TPFoundation-Swift
     - TPPhoto-Swift/Base
   - TPPhoto-Swift/Previewer (1.0.0):
     - SDWebImage
     - SnapKit
     - TPPhoto-Swift/Base
     - TPUIKit-Swift
-  - TPUIKit-Swift (1.0.0):
+  - TPUIKit-Swift (1.0.1):
     - SnapKit
     - TPFoundation-Swift
-    - TPUIKit-Swift/Alert (= 1.0.0)
-    - TPUIKit-Swift/Banner (= 1.0.0)
-    - TPUIKit-Swift/Base (= 1.0.0)
-    - TPUIKit-Swift/Blank (= 1.0.0)
-    - TPUIKit-Swift/MarginLabel (= 1.0.0)
-    - TPUIKit-Swift/Menu (= 1.0.0)
-    - TPUIKit-Swift/Navigator (= 1.0.0)
-    - TPUIKit-Swift/PageControl (= 1.0.0)
-    - TPUIKit-Swift/Refresh (= 1.0.0)
-    - TPUIKit-Swift/SimBtn (= 1.0.0)
-    - TPUIKit-Swift/Tabbar (= 1.0.0)
-    - TPUIKit-Swift/Toast (= 1.0.0)
-  - TPUIKit-Swift/Alert (1.0.0):
+    - TPUIKit-Swift/Alert (= 1.0.1)
+    - TPUIKit-Swift/BackgroundLineView (= 1.0.1)
+    - TPUIKit-Swift/Banner (= 1.0.1)
+    - TPUIKit-Swift/Base (= 1.0.1)
+    - TPUIKit-Swift/Blank (= 1.0.1)
+    - TPUIKit-Swift/MarginLabel (= 1.0.1)
+    - TPUIKit-Swift/Menu (= 1.0.1)
+    - TPUIKit-Swift/Navigator (= 1.0.1)
+    - TPUIKit-Swift/PageControl (= 1.0.1)
+    - TPUIKit-Swift/Refresh (= 1.0.1)
+    - TPUIKit-Swift/SimBtn (= 1.0.1)
+    - TPUIKit-Swift/Tabbar (= 1.0.1)
+    - TPUIKit-Swift/Toast (= 1.0.1)
+  - TPUIKit-Swift/Alert (1.0.1):
     - SnapKit
     - TPFoundation-Swift
-  - TPUIKit-Swift/Banner (1.0.0):
+  - TPUIKit-Swift/BackgroundLineView (1.0.1):
+    - SnapKit
+    - TPFoundation-Swift
+  - TPUIKit-Swift/Banner (1.0.1):
     - SnapKit
     - TPFoundation-Swift
     - TPUIKit-Swift/PageControl
-  - TPUIKit-Swift/Base (1.0.0):
+  - TPUIKit-Swift/Base (1.0.1):
     - SnapKit
     - TPFoundation-Swift
-  - TPUIKit-Swift/Blank (1.0.0):
-    - SnapKit
-    - TPFoundation-Swift
-    - TPUIKit-Swift/Base
-  - TPUIKit-Swift/MarginLabel (1.0.0):
-    - SnapKit
-    - TPFoundation-Swift
-  - TPUIKit-Swift/Menu (1.0.0):
+  - TPUIKit-Swift/Blank (1.0.1):
     - SnapKit
     - TPFoundation-Swift
     - TPUIKit-Swift/Base
-  - TPUIKit-Swift/Navigator (1.0.0):
+  - TPUIKit-Swift/MarginLabel (1.0.1):
     - SnapKit
     - TPFoundation-Swift
-  - TPUIKit-Swift/PageControl (1.0.0):
+  - TPUIKit-Swift/Menu (1.0.1):
     - SnapKit
     - TPFoundation-Swift
-  - TPUIKit-Swift/Refresh (1.0.0):
+    - TPUIKit-Swift/Base
+  - TPUIKit-Swift/Navigator (1.0.1):
+    - SnapKit
+    - TPFoundation-Swift
+  - TPUIKit-Swift/PageControl (1.0.1):
+    - SnapKit
+    - TPFoundation-Swift
+  - TPUIKit-Swift/Refresh (1.0.1):
     - MJRefresh
     - SnapKit
     - TPFoundation-Swift
     - TPUIKit-Swift/Base
-  - TPUIKit-Swift/SimBtn (1.0.0):
+  - TPUIKit-Swift/SimBtn (1.0.1):
     - SnapKit
     - TPFoundation-Swift
-  - TPUIKit-Swift/Tabbar (1.0.0):
+  - TPUIKit-Swift/Tabbar (1.0.1):
     - SnapKit
     - TPFoundation-Swift
     - TPUIKit-Swift/Base
-  - TPUIKit-Swift/Toast (1.0.0):
+  - TPUIKit-Swift/Toast (1.0.1):
     - MBProgressHUD
     - SnapKit
     - TPFoundation-Swift
@@ -105,9 +110,9 @@ SPEC CHECKSUMS:
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   TPFoundation-Swift: b1be14c16eff9220f9066b410fdbdec5c1a4a6a1
-  TPPhoto-Swift: e2f9e24fabdb91d6f93e5e6babe404b3a71c66cd
-  TPUIKit-Swift: 4b2e4827331afc1d279c7c0bd2c49f0e6de2abd5
+  TPPhoto-Swift: 75d19418c517d5bf0524562005537ab4a5906da5
+  TPUIKit-Swift: 6c364368dbe12a85621b2299bfba4c7212064f04
 
-PODFILE CHECKSUM: 18d6917d1acf17c51e7f76ea97e1ce0ea2378d79
+PODFILE CHECKSUM: 36f091f29159cd554f8ab81082882362e942a4d2
 
 COCOAPODS: 1.10.1
